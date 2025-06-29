@@ -12,3 +12,4 @@ router.put('/:id', updateNote)
 router.delete('/:id', deleteNotes)
 
 export default router;
+
