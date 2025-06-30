@@ -10,7 +10,9 @@ const PORT = process.env.PORT || 5001
 
 connectDB();
 
-app.use("/api/notes",notesRoutes)                                       // This will prefix the routes of notesRoutes to /api/notes
+app.use(express.json());                                           // This will allow to access the value of title and content to req.body
+
+app.use("/api/notes",notesRoutes)                                  // This will prefix the routes of notesRoutes to /api/notes
 
 app.listen(PORT,()=>{
     console.log("Server is running on port:", PORT)
