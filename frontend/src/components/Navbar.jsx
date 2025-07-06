@@ -18,6 +18,13 @@ const Navbar = () => {
                 className="theme-controller"
                 value="megaqueendark"
                 data-toggle-theme="megaqueen,megaqueendark"
+                defaultChecked={localStorage.getItem("theme") === "megaqueendark"}
+                onChange={(e) => {
+                  const isDark = e.target.checked;
+                  const theme = isDark ? "megaqueendark" : "megaqueen";
+                  localStorage.setItem("theme", theme);
+                  document.documentElement.setAttribute("data-theme", theme);
+                }}
               />
 
               {/* sun icon */}
