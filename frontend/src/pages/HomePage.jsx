@@ -37,7 +37,9 @@ const HomePage = () => {
   
 
   return (
-    <div className="min-h-screen bg-base-200">
+    <div className="relative min-h-screen bg-base-200 overflow-hidden">
+          <div className="pointer-events-none absolute left-[-10%] top-[25%] h-[200px] w-[200px] rounded-full bg-success opacity-30 blur-3xl"></div>
+          <div className="pointer-events-none absolute right-[-5%] bottom-[10%] h-[200px] w-[200px] rounded-full bg-accent opacity-30 blur-3xl"></div>
       <Navbar />
       {isRateLimited && <RateLimitedUI/>}
 

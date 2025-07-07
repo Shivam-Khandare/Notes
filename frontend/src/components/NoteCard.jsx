@@ -20,7 +20,7 @@ const NoteCard = ({note, setNotes}) => {
     }
 
   return (
-    <Link to={`/note/${note._id}`} className='card hover:shadow-xl bg-base-100 transition-all duration-200 border-t-4 border-r-4'>
+    <Link to={`/note/${note._id}`} className='card hover:shadow-xl bg-base-100 shadow-md transition-all duration-200 border-t-4 border-r-4'>
         <div className='card-body'>
             <h3 className='card-title text-base-content'>{note.title}</h3>
             <p className='text-base-content/70 line-clamp-3'>{note.content}</p>
