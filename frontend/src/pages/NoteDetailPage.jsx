@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router";
 import api from "../lib/axios";
 import toast from "react-hot-toast";
-import { div, nav, title } from "framer-motion/client";
 import { ArrowLeft, Loader, Trash2 } from "lucide-react";
 import Navbar from "../components/Navbar";
 
